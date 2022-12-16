@@ -18,7 +18,7 @@ router.get('api/1', function(req, res, next) {
   );
 });
 
-router.get('/api/', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.status(200).json(
     [
       {
