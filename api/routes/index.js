@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/api/1', function(req, res, next) {
+router.get('/api/getone', function(req, res, next) {
   res.status(200).json(
     {
       balance: 100000,
@@ -18,7 +17,7 @@ router.get('/api/1', function(req, res, next) {
   );
 });
 
-router.get('/api', function(req, res, next) {
+router.get('/api/getall', function(req, res, next) {
   res.status(200).json(
     [
       {
